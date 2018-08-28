@@ -3,6 +3,17 @@ C++ Helper classes for JNI
 
 Example:
 ```c++
+#include "Jni.h"
+
+#include <jni/JNIArray.h>
+#include <jni/JNIArrayTypes.h>
+#include <jni/JNIClass.h>
+#include <jni/JNIField.h>
+#include <jni/JNIFieldTypes.h>
+#include <jni/JNIString.h>
+#include <jni/JNIThrowable.h>
+#include <jni/JNIThrowableTypes.h>
+
 #define JNI_FUNC_NAME(name) Java_com_yebgi83_jni ## _ ## name
 
 JNIEXPORT jlong JNICALL JNI_FUNC_NAME(initialize)(JNIEnv *env, jclass thisObj, jstring jniLabel, jstring jniConfigPath)
