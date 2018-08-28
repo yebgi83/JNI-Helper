@@ -3,8 +3,6 @@ C++ Helper classes for JNI
 
 Example:
 ```c++
-#include "Jni.h"
-
 #include <jni/JNIArray.h>
 #include <jni/JNIArrayTypes.h>
 #include <jni/JNIClass.h>
