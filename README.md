@@ -13,7 +13,7 @@ JNIEXPORT jlong JNICALL JNI_FUNC_NAME(initialize)(JNIEnv *env, jclass thisObj, j
 		string label = JNIString(env, jniLabel).GetString();
 		string configPath = JNIString(env, jniConfigPath).GetString();
 		
-		jlong result = reinterpret_cast<jlong>(InnerMethod(message, label, configPath));
+		jlong result = reinterpret_cast<jlong>(InitContext(message, label, configPath));
 		
 		if (result) {
 			return result;
